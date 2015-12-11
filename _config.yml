@@ -5,7 +5,7 @@ permalink:           /:categories/:title
 # Setup
 title:               World of Oli
 tagline:             'Programming stuff'
-description:         'TODO'
+description:         'My development experiences, findings, and stuff others might find useful.'
 url:                 http://ofalvai.github.io/
 baseurl:             ''
 paginate:            5
@@ -13,13 +13,14 @@ paginate:            5
 # About/contact
 author:
   name:              Olivér Falvai
-  url:               https://twitter.com/ofalvai
+  twitter:           https://twitter.com/ofalvai
   email:             ofalvai@gmail.com
+  github:            https://github.com/ofalvai
 
 # Custom vars
 version:             1.0.0
 
 # Build settings
-markdown: kramdown
-highlighter: true
-gems: [jekyll-paginate]
+markdown:            kramdown
+highlighter:         true
+gems:                [jekyll-paginate]
