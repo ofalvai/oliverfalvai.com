@@ -30,6 +30,7 @@
   <!-- Twitter cards metadata -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@ofalvai">
+  <meta name="twitter:description" content="{{ post.content | strip_html | truncatewords: 50 }}">
   {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}">
   {% else %}
@@ -38,7 +39,4 @@
   {% if page.url %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   {% endif %}
-  {% if post.title }
-    <meta name="twitter:description" content="{{ post.content | strip_html | xml_escape | truncate: 200 }}">
-  { % endif %}
 </head>
