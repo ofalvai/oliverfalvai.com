@@ -22,5 +22,4 @@ version:             1.0.0
 
 # Build settings
 markdown:            kramdown
-highlighter:         true
 gems:                [jekyll-paginate]
