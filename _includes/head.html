@@ -30,11 +30,11 @@
   <!-- Twitter cards metadata -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@ofalvai">
-  <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncatewords: 200 }}">
-  {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  {% if page.layout == 'post' %}
+    <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncate: 200 }}">
   {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
   {% if page.url %}
     <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
