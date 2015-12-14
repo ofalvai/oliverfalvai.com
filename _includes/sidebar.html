@@ -5,6 +5,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
+    <img src="{{ site.baseurl }}/public/me.jpg" alt="World of Oli" class="avatar">
     <p>{{ site.description }}</p>
   </div>
 
@@ -25,9 +26,8 @@
       {% endif %}
     {% endfor %}
 
-    <a class="sidebar-nav-item" href="{{ site.author.twitter }}">My Twitter</a>
-    <a class="sidebar-nav-item" href="{{ site.author.github }}">My GitHub</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item" href="{{ site.author.twitter }}" target="_blank">My Twitter</a>
+    <a class="sidebar-nav-item" href="{{ site.author.github }}" target="_blank">My GitHub</a>
   </nav>
 
   <div class="sidebar-item">
