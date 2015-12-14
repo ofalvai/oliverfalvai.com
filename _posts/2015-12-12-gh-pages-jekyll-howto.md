@@ -13,6 +13,8 @@ It's not too hard to set everything up, but the relevant information is scattere
 - Publish to GitHub Pages as a personal blog (not a project page)
 - Small tweaks and tips
 
+<!--more-->
+
 # Installing on Windows
 Ruby is very unstable on Windows, but fortunately there's [this guide](http://jekyll-windows.juthilo.com/) about installing Ruby and Jekyll, which can be set up on Windows quite well.
 The guide is a bit outdated about version numbers, but I didn't have problems with the current versions (Ruby 2.2.3, Jekyll 3.0.1) at the time of writing this.
