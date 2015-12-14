@@ -43,7 +43,7 @@ I added Disqus commenting ([guide](https://help.disqus.com/customer/portal/artic
 
 The default index view displays entire posts, but I wanted to show only a few paragraphs of each post. Jekyll has a `post.excerpt` variable, so I edited `_layouts/post.html` to render that instead of `post.content`. By default, the excerpt is the first paragraph of the content, but I'd rather set that manually for every post. To do so, define a separator tag in `_config.yml`:
 
-{% highlight yml %}
+{% highlight yaml %}
 excerpt_separator: <!--more-->
 {% endhighlight %}
 
