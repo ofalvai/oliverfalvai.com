@@ -41,17 +41,25 @@ The blog's name, description, and the sidebar can be modified in `_config.yaml`.
 
 I added Disqus commenting ([guide](https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)), and Google Analytics tracking code. I didn't like the default URL pattern, so I changed the permalink attribute in `_config.yml` to `/:categories/:title` to hide the date part (maybe I'll start using categories in the future).
 
+The default index view displays entire posts, but I wanted to show only a few paragraphs of each post. Jekyll has a `post.excerpt` variable, so I edited `_layouts/post.html` to render that instead of `post.content`. By default, the excerpt is the first paragraph of the content, but I'd rather set that manually for every post. To do so, define a separator tag in `_config.yml`:
+
+{% highlight yml %}
+excerpt_separator: <!--more-->
+{% endhighlight %}
+
+Now you can insert that tag in your posts at the right position.
+
 The theme does not include Twitter Card metadata tags, so I added them to `_includes/head.html`:
 
 {% highlight html %}
 <!-- Twitter cards metadata -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@USERNAME">
-<meta name="twitter:description" content="{% raw %}{{ page.content | markdownify | strip_html | truncatewords: 200 }}{% endraw %}">
-{% raw %}{% if page.title %}{% endraw %}
-  <meta name="twitter:title" content="{% raw %}{{ page.title }}{% endraw %}">
+<meta name="twitter:title" content="{% raw %}{{ page.title }}{% endraw %}">
+{% raw %}{% if page.layout == 'post' %}{% endraw %}
+<meta name="twitter:description" content="{% raw %}{{ page.content | markdownify | strip_html | truncate: 200 }}{% endraw %}">
 {% raw %}{% else %}{% endraw %}
-  <meta name="twitter:title" content="{% raw %}{{ site.title }}{% endraw %}">
+  <meta name="twitter:description" content="{% raw %}{{ site.description }}{% endraw %}">
 {% raw %}{% endif %}{% endraw %}
 {% raw %}{% if page.url %}{% endraw %}
   <meta name="twitter:url" content="{% raw %}{{ site.url }}{{ page.url }}{% endraw %}">
