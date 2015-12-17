@@ -16,7 +16,7 @@ title: Home
 
     {{ post.excerpt }}
     
-    {% if page.content contains '<!--more-->' %}
+    {% if post.content contains '<!--more-->' %}
          <a href="{{ post.url }}">Read more &rarr;</a>
     {% endif %}
   </div>
