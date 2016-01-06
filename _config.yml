@@ -6,7 +6,7 @@ permalink:           /:categories/:title
 title:               World of Oli
 tagline:             'Programming stuff'
 description:         'My development experiences, findings, and stuff others might find useful.'
-url:                 http://ofalvai.github.io/
+url:                 https://ofalvai.github.io
 baseurl:             ''
 paginate:            5
 
