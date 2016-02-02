@@ -21,7 +21,5 @@ author:
 version:             1.0.0
 
 # Build settings
-markdown:            kramdown
 gems:                [jekyll-paginate]
-highlighter:         true
 excerpt_separator:   <!--more-->
