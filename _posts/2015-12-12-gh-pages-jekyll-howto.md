@@ -21,6 +21,8 @@ The guide is a bit outdated about version numbers, but I didn't have problems wi
 
 So go ahead, and install Ruby, Ruby DevKit (I was skeptical about the x64 version, but it does work!), and Jekyll as shown in the tutorial.
 
+**Update**: *GitHub Pages [has been updated to Jekyll 3.0](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0) so the following paragraph is not important anymore. Highlighting still doesn't work locally, but it's not necessary to edit `_config.yml`, and GitHub won't send you build warning emails.*
+
 The next step in the guide is to install a syntax highlighter engine, either Pygments or Rouge. The guide is a bit outdated about this, because starting with Jekyll 3.0, the default highlighter is Rouge (instead of Pygments.rb), a Ruby dependency of Jekyll. In theory, there's nothing to do, everything works out of the box. In reality, I couldn't make this work on Windows, but I found a workaround: add the line `highlighter: true` to your `_config.yml` to avoid build errors. The highlighting will not work locally, but GitHub Pages will ignore this line and build your site with its highlighter (which is still Pygments, by the way). 
 
 You can continue the Windows installing guide after your Jekyll site is set up and  running. 
