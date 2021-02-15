@@ -1,0 +1,19 @@
+- title: home
+  url: /
+  external: false
+
+- title: projects
+  url: /projects/
+  external: false
+
+- title: archive
+  url: /archive/
+  external: false
+
+- title: github
+  url: https://github.com/ofalvai
+  external: true
+
+- title: twitter
+  url: https://twitter.com/ofalvai
+  external: true

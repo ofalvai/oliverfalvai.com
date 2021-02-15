@@ -1,25 +1,80 @@
-# Permalinks
-# 
-permalink:           /:categories/:title
+# Site settings
+title: Olivér Falvai
+description: Personal blog of Olivér Falvai
+lang: en-US 
+timezone: Europe/Budapest
+image: 
+repo: https://github.com/ofalvai/ofalvai.github.io # site repo [optional]
+mode: light
 
-# Setup
-title:               World of Oli
-tagline:             'Programming stuff'
-description:         'My development experiences, findings, and stuff others might find useful.'
-url:                 https://ofalvai.github.io
-baseurl:             ''
-paginate:            5
-
-# About/contact
 author:
-  name:              Olivér Falvai
-  twitter:           https://twitter.com/ofalvai
-  email:             ofalvai@gmail.com
-  github:            https://github.com/ofalvai
+  name: Olivér Falvai
+  bio: 
+  username: ofalvai # general username
+  github: ofalvai # github username
+  twitter: ofalvai # twitter username
+  avatar: /assets/img/avatar.jpg
 
-# Custom vars
-version:             1.0.0
+# URL settings
+url: "https://ofalvai.github.io"
+baseurl:
+permalink: /:title/
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
 
 # Build settings
-gems:                [jekyll-paginate]
-excerpt_separator:   <!--more-->
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
+
+reading_time:

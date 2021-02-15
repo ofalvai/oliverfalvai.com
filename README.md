@@ -1,3 +1,3 @@
-The code of my blog, [ofalvai.github.io](http://ofalvai.github.io).
+[Jekyll](https://jekyllrb.com) source of my personal page at [ofalvai.github.io](https://ofalvai.github.io)
 
-Based on the [Lanyon](https://github.com/poole/lanyon#readme) Jekyll theme.
+Theme: [Klisé](https://github.com/piharpi/jekyll-klise)
