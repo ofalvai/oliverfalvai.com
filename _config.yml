@@ -16,7 +16,7 @@ author:
   avatar: /assets/img/avatar.jpg
 
 # URL settings
-url: "https://ofalvai.github.io"
+url: https://oliverfalvai.com
 baseurl:
 permalink: /:title/
 
