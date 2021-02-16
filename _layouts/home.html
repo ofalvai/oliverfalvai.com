@@ -3,6 +3,11 @@ layout: default
 home: true
 ---
 
+<p>I'm a software engineer based in Budapest (Hungary), working at <a href="https://bitrise.io" target="_blank">Bitrise</a>.</p>
+
+<p>Twitter: <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><strong>@{{ site.author.twitter }}</strong></a></p>
+<p>GitHub: <a href="https://github.com/{{ site.author.github }}" target="_blank"><strong>{{ site.author.github }}</strong></a></p>
+
 <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
 {%- for post in site.posts limit: site.number_of_posts -%}
 <article class="post-item">

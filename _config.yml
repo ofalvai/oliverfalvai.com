@@ -1,6 +1,6 @@
 # Site settings
 title: Olivér Falvai
-description: Personal blog of Olivér Falvai
+description: Homepage of Olivér Falvai
 lang: en-US 
 timezone: Europe/Budapest
 image: 
@@ -9,7 +9,7 @@ mode: light
 
 author:
   name: Olivér Falvai
-  bio: 
+  bio: Software Engineer
   username: ofalvai # general username
   github: ofalvai # github username
   twitter: ofalvai # twitter username
@@ -17,7 +17,6 @@ author:
 
 # URL settings
 url: https://oliverfalvai.com
-baseurl:
 permalink: /:title/
 
 # Collection setting

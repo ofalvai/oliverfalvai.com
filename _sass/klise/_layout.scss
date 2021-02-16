@@ -182,7 +182,7 @@
 // Author
 .author {
   margin-top: 6.3rem;
-  margin-bottom: 7.2rem;
+  margin-bottom: 4.2rem;
   text-align: center;
 
   @include media-query($on-mobile) {
@@ -220,6 +220,7 @@
   font-size: $base-font-size;
   font-weight: 700;
   margin-bottom: 5px;
+  margin-top: 25px;
   color: $black;
 }
 
