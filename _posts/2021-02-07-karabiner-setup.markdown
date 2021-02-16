@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Karabiner setup"
+title:  "My Keyboard setup"
 date:   2021-02-07 18:46:06 +0100
 categories: keyboard karabiner workflow
 ---
