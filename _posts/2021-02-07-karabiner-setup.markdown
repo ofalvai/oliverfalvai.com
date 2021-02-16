@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "My Keyboard setup"
+title:  "My keyboard setup"
 date:   2021-02-07 18:46:06 +0100
 categories: keyboard karabiner workflow
+description: My keyboard customizations, shortcuts and tricks
 ---
 
 ## This is not about mechanical keyboards
