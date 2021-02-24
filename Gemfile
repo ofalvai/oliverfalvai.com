@@ -22,4 +22,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
   gem 'jekyll-compose', '~> 0.12.0'
   gem 'jekyll-postfiles', '~> 3.1'
+  gem 'jekyll-target-blank', '~> 2.0'
 end
