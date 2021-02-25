@@ -4,7 +4,11 @@ title:  "My keyboard setup"
 date:   2021-02-07 18:46:06 +0100
 categories: keyboard karabiner workflow
 description: My keyboard customizations, shortcuts and tricks
+image: karabiner-setup/keyboard.jpg
 ---
+
+![Keyboard](keyboard.jpg)
+<span>Photo by <a href="https://unsplash.com/@athulca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Athul Cyriac Ajay</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ## This is not about mechanical keyboards
 
