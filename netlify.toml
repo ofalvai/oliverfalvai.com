@@ -1,5 +1,25 @@
 [[plugins]]
 package = "netlify-plugin-checklinks"
 
-    [plugins.inputs]
+  [plugins.inputs]
     skipPatterns = ["feed.xml"] # Can't handle xml:base and relative paths
+
+[[plugins]]
+package = "netlify-plugin-image-optim"
+
+[[plugins]]
+package = "netlify-plugin-jekyll-cache"
+
+[[plugins]]
+package = "@netlify/plugin-lighthouse"
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
