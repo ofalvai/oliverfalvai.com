@@ -4,7 +4,7 @@ title:  How to make infrared devices smarter using ESPHome
 date:   2021-03-28 10:36:00 +0100
 categories: smarthome
 description: We can easily make our "dumb" infrared-controlled devices smart with a cheap microcontroller and amazing open-source software. A WiFi microcontroller and an IR transmitter allows us to integrate these devices into a smart home system and let automation rules control them.
-image: infrared-smart–remote–esphome/ir-transmitter.jpeg
+image: infrared-smart-remote-esphome/ir-transmitter.jpeg
 ---
 
 We can easily make our "dumb" infrared-controlled devices smart with a cheap microcontroller and amazing open-source software. A WiFi microcontroller and an IR transmitter allows us to integrate these devices into a smart home system and let automation rules control them.
