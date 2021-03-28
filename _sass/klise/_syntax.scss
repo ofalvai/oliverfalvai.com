@@ -8,7 +8,7 @@ code {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  font-size: inherit;
+  font-size: 14px;
 
   &.highlighter-rouge {
     padding: 1px 3px;
@@ -22,7 +22,7 @@ code {
 
 // Codeblock Theme
 pre.highlight, pre {
-  margin: 0 -27px;
+  margin: 0;
   @include media-query($on-mobile) {
     margin: 0 calc(51% - 51vw);
     padding-left: 20px;
@@ -136,7 +136,6 @@ pre.highlight, pre {
 .highlight .sx,
 .highlight .s1 {
   color: #b8bb26;
-  font-style: italic;
 }
 
 .highlight .si {
