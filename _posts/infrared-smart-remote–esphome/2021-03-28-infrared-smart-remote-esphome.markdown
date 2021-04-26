@@ -149,6 +149,10 @@ __AC, fan:__
 - turn on before arriving home based on geolocation data
 - switch to dry mode if indoor humidity is high
 
+## Next steps
+
+Check out [part two][part-two] of this article for my more advanced usages of ESPHome.
+
 [esp8266]: https://en.wikipedia.org/wiki/ESP8266
 [esp32]: https://en.wikipedia.org/wiki/ESP32
 [d1-mini]: https://www.wemos.cc/en/latest/d1/d1_mini.html
@@ -170,3 +174,4 @@ __AC, fan:__
 [lovelace-vertical]: https://www.home-assistant.io/lovelace/vertical-stack/
 [lovelace-button]: https://www.home-assistant.io/lovelace/button/
 [material-icons]: https://materialdesignicons.com/
+[part-two]: /esphome-ir-remote-tips-tricks
