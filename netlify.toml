@@ -16,7 +16,7 @@ package = "@netlify/plugin-lighthouse"
     performance = 0.9
     accessibility = 0.9
     best-practices = 0.9
-    seo = 0.9
+    seo = 0.8
 
 [[plugins]]
   package = "netlify-plugin-minify-html"
