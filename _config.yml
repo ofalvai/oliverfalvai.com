@@ -10,9 +10,11 @@ mode: light
 author:
   name: Olivér Falvai
   bio: Software Engineer
-  username: ofalvai # general username
-  github: ofalvai # github username
-  twitter: ofalvai # twitter username
+  username: ofalvai
+  github: ofalvai
+  mastodon_handle: "@oli@oliverfalvai.xyz"
+  mastodon_url: https://mastodon.oliverfalvai.xyz/@oli
+  twitter: ofalvai
   avatar: /assets/img/avatar.jpg
 
 # URL settings
