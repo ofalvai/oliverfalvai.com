@@ -80,3 +80,7 @@ plugins:
   - jekyll-target-blank
 
 reading_time:
+
+target-blank:
+  noopener: false
+  noreferrer: false
