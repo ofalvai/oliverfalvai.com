@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Fonts preferences
 $sans-family: Roboto, sans-serif;
 $mono-family: Consolas, monospace;
@@ -40,7 +42,7 @@ $narrow-size: 720px;
 
 // Padding unit
 $spacing-full: 30px;
-$spacing-half: $spacing-full / 2;
+$spacing-half: math.div($spacing-full, 2);
 
 // State of devices
 $on-mobile: 768px;
