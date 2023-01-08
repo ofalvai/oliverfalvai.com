@@ -164,7 +164,7 @@ Check out [part two][part-two] of this article for my more advanced usages of ES
 [node-red]: https://nodered.org/
 [mqtt]: https://mqtt.org/
 [esphome-getting-started]: https://esphome.io/guides/getting_started_command_line.html
-[esphome-ir-climate]: https://esphome.io/components/climate/ir_climate.html
+[esphome-ir-climate]: https://esphome.io/components/climate/climate_ir.html
 [esphome-ir-receiver]: https://esphome.io/components/remote_receiver.html
 [esphome-ir-transmitter]: https://esphome.io/components/remote_transmitter.html
 [esphome-automation]: https://esphome.io/guides/automations.html
