@@ -1,0 +1,8 @@
+# Netlify redirect file, this is copied over to the publish directory
+
+# Redirect old site URLs
+/projects                           /notes/Projects
+/karabiner-setup                    /notes/Posts/Karabiner-setup
+/esphome-ir-remote-tips-tricks      /notes/Posts/ESPHome-IR-remote-tips-and-tricks
+/infrared-smart-remote-esphome      /notes/Posts/How-to-make-infrared-devices-smarter-using-ESPHome
+/bluetooth-call-quality             /notes/Posts/Bluetooth-call-quality
