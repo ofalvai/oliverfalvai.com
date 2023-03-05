@@ -30,7 +30,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --base-url="${{env.NETLIFY_ALIAS}}--${{env.NETLIFY_ALIAS}}/"
+        run: hugo --minify --baseURL="${{env.NETLIFY_ALIAS}}--${{env.NETLIFY_ALIAS}}/"
 
       - name: Netlify deploy
         uses: netlify/actions/cli@master
