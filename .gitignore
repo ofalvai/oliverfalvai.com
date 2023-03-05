@@ -1,4 +1,10 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+.DS_Store
+public
+resources
+.idea
+.vscode
+content/.obsidian
+assets/indices/linkIndex.json
+assets/indices/contentIndex.json
+linkmap
+/.hugo_build.lock

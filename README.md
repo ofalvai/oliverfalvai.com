@@ -1,3 +1,6 @@
-[Jekyll](https://jekyllrb.com) source of my personal page at [oliverfalvai.com](https://oliverfalvai.com)
+Source of my personal page at [oliverfalvai.com](https://oliverfalvai.com)
 
-Theme: [Klisé](https://github.com/piharpi/jekyll-klise)
+Based on:
+
+- [Quartz](https://quartz.jzhao.xyz/)
+- [Hugo](https://gohugo.io/)
