@@ -7,6 +7,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    env:
+      NETLIFY_SITENAME: oliverfalvai.netlify.app
+      NETLIFY_ALIAS: pr-${{github.event.pull_request.number}}-${{github.sha}}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,12 +30,12 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify --base-url="/"
+        run: hugo --minify --base-url="${{env.NETLIFY_ALIAS}}--${{env.NETLIFY_ALIAS}}/"
 
       - name: Netlify deploy
         uses: netlify/actions/cli@master
         with:
-          args: deploy --dir=public
+          args: deploy --dir=public --alias=${{env.NETLIFY_ALIAS}}
         env:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
