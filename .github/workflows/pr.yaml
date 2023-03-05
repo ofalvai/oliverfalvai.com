@@ -47,7 +47,8 @@ jobs:
             [Netlify draft deploy](${{steps.netlify-deploy.outputs.NETLIFY_URL}})
           comment_tag: netlify-url
 
-      - uses: JustinBeckwith/linkinator-action@v1
+      - name: Link checker
+        uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
           recurse: true
@@ -59,8 +60,3 @@ jobs:
           urls: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
-  checks:
-    runs-on: ubuntu-22.04
-    steps:
-    - uses: actions/checkout@v3
-    
