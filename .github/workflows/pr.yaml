@@ -1,0 +1,38 @@
+name: Deploy PR preview
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Build Link Index
+        uses: jackyzha0/hugo-obsidian@v2.19
+        with:
+          index: true
+          input: content
+          output: assets/indices
+          root: .
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.110.0'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Netlify deploy
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=public
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
