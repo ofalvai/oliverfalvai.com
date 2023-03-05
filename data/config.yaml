@@ -1,0 +1,28 @@
+name: Olivér Falvai
+enableToc: false
+openToc: false
+enableLinkPreview: true
+enableLatex: false
+enableCodeBlockTitle: true
+enableCodeBlockCopy: true
+enableCallouts: true
+enableSPA: true
+enableFooter: true
+enableContextualBacklinks: true
+enableRecentNotes: true
+enableGitHubEdit: false
+enableMermaid: true
+GitHubLink: https://github.com/jackyzha0/quartz/tree/hugo/content
+search:
+  enableSemanticSearch: false
+  operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
+  operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
+description:
+  Homepage of Olivér Falvai
+page_title:
+  "Olivér Falvai"
+links:
+  - link_name: Mastodon
+    link: https://mastodon.oliverfalvai.xyz/@oli
+  - link_name: GitHub
+    link: https://github.com/ofalvai
