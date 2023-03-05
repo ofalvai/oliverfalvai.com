@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.17
 
 RUN apk add --no-cache go hugo git make perl
 RUN go install github.com/jackyzha0/hugo-obsidian@latest
