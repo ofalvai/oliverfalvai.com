@@ -44,5 +44,5 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            [Netlify draft deploy](${{steps.netlify-deploy.NETLIFY_URL}})
+            [Netlify draft deploy](${{steps.netlify-deploy.outputs.NETLIFY_URL}})
           comment_tag: netlify-url
