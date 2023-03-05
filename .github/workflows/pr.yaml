@@ -34,6 +34,7 @@ jobs:
 
       - name: Netlify deploy
         uses: netlify/actions/cli@master
+        id: netlify-deploy
         with:
           args: deploy --dir=public --alias=${{env.NETLIFY_ALIAS}}
         env:
@@ -43,4 +44,5 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            [Netlify draft deploy](${{env.NETLIFY_URL}})
+            [Netlify draft deploy](${{steps.netlify-deploy.NETLIFY_URL}})
+          comment_tag: netlify-url
