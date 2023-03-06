@@ -193,6 +193,14 @@
             graph: false,
           }
         })
+        insights.track({
+          id: "link-click",
+          parameters: {
+            href: target.href,
+            broken,
+            internal,
+          }
+        })
       }
 
       const links = document.querySelectorAll("a")
@@ -249,4 +257,9 @@
   {{ $trimmedURL := trim (index (split .Site.BaseURL "://") 1) "/" }}
   <script defer data-domain="{{$trimmedURL}}" src="https://plausible.io/js/script.js"></script>
   <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <script src="https://getinsights.io/js/insights.js"></script>
+  <script>
+  insights.init('wJvUuHlUOWb2GHZj');
+  insights.trackPages();
+  </script>
 </head>
