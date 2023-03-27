@@ -19,8 +19,7 @@ search:
   operandIndexId: "REPLACE-WITH-YOUR-OPERAND-INDEX-ID"
 description:
   Homepage of Olivér Falvai
-page_title:
-  "Olivér Falvai"
+page_title: ~oliver.falvai
 links:
   - link_name: Mastodon
     link: https://mastodon.oliverfalvai.xyz/@oli

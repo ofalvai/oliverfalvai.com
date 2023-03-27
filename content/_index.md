@@ -1,5 +1,4 @@
 ---
-title: Olivér Falvai
 enableToc: false
 ---
 

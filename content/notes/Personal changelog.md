@@ -6,6 +6,9 @@ enableToc: true
 This is a regularly updated changelog of the various things I'm working on.
 
 ## 2023
+### March
+- Had a lot of fun learning Rust
+- Learning a new language is a perfect excuse for making small tools for my own needs. [[notes/Home-cooked software]] is the result of this.
 
 ### January
 
