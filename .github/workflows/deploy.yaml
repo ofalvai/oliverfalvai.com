@@ -47,7 +47,7 @@ jobs:
           verbosity: "INFO"
 
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v9
+        uses: treosh/lighthouse-ci-action@v10
         with:
           urls: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
           uploadArtifacts: true # save results as an action artifacts
