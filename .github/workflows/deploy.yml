@@ -3,6 +3,7 @@ name: Deploy to Netlify
 on:
   push:
     branches: [v4]
+  workflow_dispatch: {}
 
 concurrency:
   group: "pages"
