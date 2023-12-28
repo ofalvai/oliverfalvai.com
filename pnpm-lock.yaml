@@ -33,8 +33,8 @@ dependencies:
     specifier: ^2.16.0
     version: 2.16.1(esbuild@0.19.10)
   flexsearch:
-    specifier: 0.7.21
-    version: 0.7.21
+    specifier: 0.7.31
+    version: 0.7.31
   github-slugger:
     specifier: ^2.0.0
     version: 2.0.0
@@ -1565,8 +1565,8 @@ packages:
       to-regex-range: 5.0.1
     dev: false
 
-  /flexsearch@0.7.21:
-    resolution: {integrity: sha512-W7cHV7Hrwjid6lWmy0IhsWDFQboWSng25U3VVywpHOTJnnAZNPScog67G+cVpeX9f7yDD21ih0WDrMMT+JoaYg==}
+  /flexsearch@0.7.31:
+    resolution: {integrity: sha512-XGozTsMPYkm+6b5QL3Z9wQcJjNYxp0CYn3U1gO7dwD6PAqU1SVWZxI9CCg3z+ml3YfqdPnrBehaBrnH2AGKbNA==}
     dev: false
 
   /foreground-child@3.1.1:
