@@ -29,6 +29,15 @@ jobs:
       - name: Build
         run: pnpm exec ./quartz/bootstrap-cli.mjs build
 
+      - name: Netlify deploy
+        uses: netlify/actions/cli@master
+        id: netlify-deploy
+        with:
+          args: deploy --dir=public --prod
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+
       - name: Link checker
         uses: JustinBeckwith/linkinator-action@v1
         with:
@@ -43,11 +52,3 @@ jobs:
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
-      - name: Netlify deploy
-        uses: netlify/actions/cli@master
-        id: netlify-deploy
-        with:
-          args: deploy --dir=public --prod
-        env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
