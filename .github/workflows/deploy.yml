@@ -41,7 +41,7 @@ jobs:
         uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
-          recurse: true
+          config: linkinator.config.json
           verbosity: "INFO"
 
       - name: Audit URLs using Lighthouse
