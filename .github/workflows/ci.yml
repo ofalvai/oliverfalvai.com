@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for git-based last modification date
 
       - name: Install asdf & tools
-        uses: asdf-vm/actions/install@v2
+        uses: asdf-vm/actions/install@v3
       
       - name: Enable PNPM
         run: corepack enable && asdf reshim nodejs
