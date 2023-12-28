@@ -11,7 +11,7 @@ jobs:
       NETLIFY_SITENAME: oliverfalvai.netlify.app
       NETLIFY_ALIAS: pr-${{github.event.pull_request.number}}-${{github.sha}}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for git-based last modification date
 
