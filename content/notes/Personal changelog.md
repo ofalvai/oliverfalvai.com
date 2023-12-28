@@ -2,12 +2,16 @@
 enableToc: true
 ---
 
-This is a regularly updated changelog of the various things I'm working on.
+This is a regularly updated changelog of the various things I'm working on or playing with.
 
 ## 2023
+
+### June
+- My [[Home-cooked software]] has [a new tool called embeddings](https://github.com/ofalvai/homecooked/tree/main/embeddings): a CLI tool I built for exploring my Markdown notes using LLM embeddings.
+
 ### March
 - Had a lot of fun learning Rust
-- Learning a new language is a perfect excuse for making small tools for my own needs. [[notes/Home-cooked software]] is the result of this.
+- Learning a new language is a perfect excuse for making small tools for my own needs. [[Home-cooked software]] is the result of this.
 
 ### January
 
