@@ -8,6 +8,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: {
       provider: "plausible",
+      host: "https://plausible.oliverfalvai.xyz"
     },
     baseUrl: "oliverfalvai.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
