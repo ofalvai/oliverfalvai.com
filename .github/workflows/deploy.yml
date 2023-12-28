@@ -2,8 +2,7 @@ name: Deploy to Netlify
 
 on:
   push:
-    branches:
-      - main
+    branches: [v4]
 
 concurrency:
   group: "pages"
