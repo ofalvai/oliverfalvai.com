@@ -4,7 +4,7 @@ title: Deploying a Quartz site to Netlify
 
 I replaced my previous Jekyll static website with [Quartz](https://quartz.jzhao.xyz/) (you are looking at the end result!).
 I didn't want to give up my existing [Netlify](https://netlify.com) setup deploying the site, but Quartz is not just a static site (even though it's based on [Hugo](https://gohugo.io/)), so Netlify can't just automatically build it.
-Quartz's [original deploy instructions](https://quartz.jzhao.xyz/notes/hosting/) build the Hugo site with GitHub Actions and deploy it to GitHub Pages. This guide is an extension of the upstream instructions, **but deploy the final result on Netlify**.
+Quartz's [original deploy instructions](https://quartz.jzhao.xyz/hosting) build the Hugo site with GitHub Actions and deploy it to GitHub Pages. This guide is an extension of the upstream instructions, **but deploy the final result on Netlify**.
 
 ### Why it doesn't work out of the box
 Netlify recognizes popular static site generators (such as Hugo) to build the static site in its own CI system.
