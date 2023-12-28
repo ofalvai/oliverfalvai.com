@@ -1,0 +1,57 @@
+name: Deploy PR preview
+
+on:
+  pull_request:
+    branches: [ main, v4 ]
+
+jobs:
+  deploy-pr-preview:
+    runs-on: ubuntu-latest
+    env:
+      NETLIFY_SITENAME: oliverfalvai.netlify.app
+      NETLIFY_ALIAS: pr-${{github.event.pull_request.number}}-${{github.sha}}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all history for git-based last modification date
+
+      - name: Install asdf & tools
+        uses: asdf-vm/actions/install@v2
+      
+      - name: Enable PNPM
+        run: corepack enable && asdf reshim nodejs
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm exec ./quartz/bootstrap-cli.mjs build
+
+      - name: Netlify deploy
+        uses: netlify/actions/cli@master
+        id: netlify-deploy
+        with:
+          args: deploy --dir=public --alias=${{env.NETLIFY_ALIAS}}
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: |
+            [Netlify draft deploy](${{steps.netlify-deploy.outputs.NETLIFY_URL}})
+          comment_tag: netlify-url
+
+      - name: Link checker
+        uses: JustinBeckwith/linkinator-action@v1
+        with:
+          paths: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
+          recurse: true
+          verbosity: "INFO"
+
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: ${{steps.netlify-deploy.outputs.NETLIFY_URL}}
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
