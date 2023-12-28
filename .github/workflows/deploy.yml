@@ -20,10 +20,11 @@ jobs:
       - name: Install asdf & tools
         uses: asdf-vm/actions/install@v2
 
+      - name: Enable PNPM
+        run: corepack enable
+
       - name: Install dependencies
-        run: |-
-          corepack enable
-          pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm exec ./quartz/bootstrap-cli.mjs build
