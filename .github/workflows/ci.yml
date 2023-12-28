@@ -19,7 +19,7 @@ jobs:
         uses: asdf-vm/actions/install@v2
       
       - name: Enable PNPM
-        run: corepack enable
+        run: corepack enable && asdf reshim nodejs
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
