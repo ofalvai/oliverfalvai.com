@@ -96,7 +96,7 @@ function addGlobalPageResources(
     const plausibleHost = cfg.analytics.host ?? "https://plausible.io"
     componentResources.afterDOMLoaded.push(`
       const plausibleScript = document.createElement("script")
-      plausibleScript.src = "${plausibleHost}/js/script.js"
+      plausibleScript.src = "${plausibleHost}/js/script.manual.js"
       plausibleScript.setAttribute("data-domain", location.hostname)
       plausibleScript.defer = true
       document.head.appendChild(plausibleScript)
