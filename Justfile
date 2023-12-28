@@ -1,5 +1,7 @@
+quartz-bin := "pnpm exec ./quartz/bootstrap-cli.mjs"
+
 quartz-preview:
-    pnpm exec ./quartz/bootstrap-cli.mjs build --serve
+    {{quartz-bin}} build --serve
 
 quartz-sync:
-    pnpm exec ./quartz/bootstrap-cli.mjs sync
+    {{quartz-bin}} sync

@@ -7,9 +7,9 @@ Hi there 👋
 I'm a software engineer based in [Budapest](https://en.wikipedia.org/wiki/Budapest), working at [Bitrise](https://bitrise.io/).
 
 Starting points:
-- [[notes/Projects/Projects]]
-- [[notes/Personal changelog]]
-- [[notes/Lists]]
+- [[Projects]]
+- [[Personal changelog]]
+- [[Lists]]
 - [Posts from old blog](/tags/blog)
 
 ---

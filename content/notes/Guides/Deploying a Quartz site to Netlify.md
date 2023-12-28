@@ -2,6 +2,10 @@
 title: Deploying a Quartz site to Netlify
 ---
 
+> [!WARNING] No longer relevant
+> This guide was written for [Quartz 3](https://four.quartz.jzhao.xyz/migrating-from-Quartz-3), based on Hugo and some custom tooling. Quartz 4 is a complete rewrite and it can be automatically deployed to Netlify. Follow [the official Quartz hosting docs](https://four.quartz.jzhao.xyz/hosting#netlify).
+
+
 I replaced my previous Jekyll static website with [Quartz](https://quartz.jzhao.xyz/) (you are looking at the end result!).
 I didn't want to give up my existing [Netlify](https://netlify.com) setup deploying the site, but Quartz is not just a static site (even though it's based on [Hugo](https://gohugo.io/)), so Netlify can't just automatically build it.
 
