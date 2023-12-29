@@ -115,7 +115,6 @@ function addGlobalPageResources(
         plausible("pageview")
       })
     `)
-
   } else if (cfg.analytics?.provider === "umami") {
     componentResources.afterDOMLoaded.push(`
       const umamiScript = document.createElement("script")
