@@ -180,7 +180,7 @@ devDependencies:
     version: 7.4.3
   '@types/flexsearch':
     specifier: ^0.7.3
-    version: 0.7.6
+    version: 0.7.42
   '@types/hast':
     specifier: ^3.0.3
     version: 3.0.3
@@ -805,8 +805,11 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: false
 
-  /@types/flexsearch@0.7.6:
-    resolution: {integrity: sha512-H5IXcRn96/gaDmo+rDl2aJuIJsob8dgOXDqf8K0t8rWZd1AFNaaspmRsElESiU+EWE33qfbFPgI0OC/B1g9FCA==}
+  /@types/flexsearch@0.7.42:
+    resolution: {integrity: sha512-FdKaw3dPgcCvqU9w8SGgqx8PrxFF2EKySRhEj1nc45HNe/2cBLff3pF52C67hzeUbNhq49t7XRIIibBd41vcIg==}
+    deprecated: This is a stub types definition. flexsearch provides its own type definitions, so you do not need this installed.
+    dependencies:
+      flexsearch: 0.7.31
     dev: true
 
   /@types/geojson@7946.0.13:
@@ -1567,7 +1570,6 @@ packages:
 
   /flexsearch@0.7.31:
     resolution: {integrity: sha512-XGozTsMPYkm+6b5QL3Z9wQcJjNYxp0CYn3U1gO7dwD6PAqU1SVWZxI9CCg3z+ml3YfqdPnrBehaBrnH2AGKbNA==}
-    dev: false
 
   /foreground-child@3.1.1:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
