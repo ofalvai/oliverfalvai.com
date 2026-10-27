@@ -150,8 +150,8 @@ dependencies:
     specifier: ^8.0.0
     version: 8.0.0
   toml:
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^5.0.0
+    version: 5.0.1
   unified:
     specifier: ^11.0.4
     version: 11.0.4
@@ -3320,8 +3320,9 @@ packages:
       vfile: 6.0.1
     dev: false
 
-  /toml@3.0.0:
-    resolution: {integrity: sha512-y/mWCZinnvxjTKYhJ+pYxwD0mRLVvOtdS2Awbgxln6iEnt4rk0yBxeSBHkGJcPucRiG0e55mwWp+g/05rsrd6w==}
+  /toml@5.0.1:
+    resolution: {integrity: sha512-EqYNA/YvUNndrA2B3O2ojzLQoTQrBxeZ9UIjQwk8t10oe6n7dwclBwd9IdZQTOKwe6vWX+AXtl6IntXRbepdxQ==}
+    engines: {node: '>=20'}
     dev: false
 
   /tough-cookie@4.1.3:
